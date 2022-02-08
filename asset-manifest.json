@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.04179b6f.css",
-    "main.js": "/static/js/main.e70035cd.js",
-    "static/js/787.f587e8d5.chunk.js": "/static/js/787.f587e8d5.chunk.js",
-    "static/media/PS2.png": "/static/media/PS2.9cc6ee7484115a30e6ad.png",
-    "static/media/PS4.png": "/static/media/PS4.88afee2e96df7723b64b.png",
-    "static/media/PS1.png": "/static/media/PS1.f596c6f43d0ec301450b.png",
-    "static/media/ProfileImage.png": "/static/media/ProfileImage.def448504b4604b36d86.png",
-    "static/media/PS3.png": "/static/media/PS3.ec767d200d3bf49b5f1a.png",
-    "index.html": "/index.html",
-    "main.04179b6f.css.map": "/static/css/main.04179b6f.css.map",
-    "main.e70035cd.js.map": "/static/js/main.e70035cd.js.map",
-    "787.f587e8d5.chunk.js.map": "/static/js/787.f587e8d5.chunk.js.map"
+    "main.css": "/blog/static/css/main.04179b6f.css",
+    "main.js": "/blog/static/js/main.057f770e.js",
+    "static/js/787.f587e8d5.chunk.js": "/blog/static/js/787.f587e8d5.chunk.js",
+    "static/media/PS2.png": "/blog/static/media/PS2.9cc6ee7484115a30e6ad.png",
+    "static/media/PS4.png": "/blog/static/media/PS4.88afee2e96df7723b64b.png",
+    "static/media/PS1.png": "/blog/static/media/PS1.f596c6f43d0ec301450b.png",
+    "static/media/ProfileImage.png": "/blog/static/media/ProfileImage.def448504b4604b36d86.png",
+    "static/media/PS3.png": "/blog/static/media/PS3.ec767d200d3bf49b5f1a.png",
+    "index.html": "/blog/index.html",
+    "main.04179b6f.css.map": "/blog/static/css/main.04179b6f.css.map",
+    "main.057f770e.js.map": "/blog/static/js/main.057f770e.js.map",
+    "787.f587e8d5.chunk.js.map": "/blog/static/js/787.f587e8d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04179b6f.css",
-    "static/js/main.e70035cd.js"
+    "static/js/main.057f770e.js"
   ]
 }
