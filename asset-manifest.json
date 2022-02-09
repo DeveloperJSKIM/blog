@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/blog/static/css/main.04179b6f.css",
-    "main.js": "/blog/static/js/main.16ace103.js",
+    "main.js": "/blog/static/js/main.a2d87116.js",
     "static/js/787.f587e8d5.chunk.js": "/blog/static/js/787.f587e8d5.chunk.js",
     "static/media/PS2.png": "/blog/static/media/PS2.9cc6ee7484115a30e6ad.png",
     "static/media/PS4.png": "/blog/static/media/PS4.88afee2e96df7723b64b.png",
@@ -10,11 +10,11 @@
     "static/media/PS3.png": "/blog/static/media/PS3.ec767d200d3bf49b5f1a.png",
     "index.html": "/blog/index.html",
     "main.04179b6f.css.map": "/blog/static/css/main.04179b6f.css.map",
-    "main.16ace103.js.map": "/blog/static/js/main.16ace103.js.map",
+    "main.a2d87116.js.map": "/blog/static/js/main.a2d87116.js.map",
     "787.f587e8d5.chunk.js.map": "/blog/static/js/787.f587e8d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04179b6f.css",
-    "static/js/main.16ace103.js"
+    "static/js/main.a2d87116.js"
   ]
 }
