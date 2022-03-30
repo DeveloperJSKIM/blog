@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React, {useState} from "react";
 import {AiFillGithub} from "react-icons/ai";
-
+import {SiBloglovin} from 'react-icons/si';
 let Contents4 = styled.div`
   display: flex;
   flex-direction: row;
@@ -40,11 +40,28 @@ let RoundView = styled.div`
 
 const Bottom =()=>{
     let [onMouse,setOnMouse] =useState(false);
+    let [onMouse2,setOnMouse2] =useState(false);
     return(
         <Contents4>
             <ItemBox>
                 <MainText>LIVE IN</MainText>
-                <SubText>제주시 한림읍</SubText>
+                <SubText>제주 한림</SubText>
+            </ItemBox>
+            <ItemBox>
+                <MainText>VELOG</MainText>
+                <a href={"https://velog.io/@jisang8255"}>
+                    <RoundView
+                        onMouse = {onMouse2}
+                        onMouseOver={()=>{
+                            setOnMouse2(true);
+                        }}
+                        onMouseOut={()=>{
+                            setOnMouse2(false);
+                        }}
+                    >
+                        <SiBloglovin color={onMouse2? "#000000":"#FFFFFF"} size={30}/>
+                    </RoundView>
+                </a>
             </ItemBox>
             <ItemBox>
                 <MainText>GIT HUB</MainText>

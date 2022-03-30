@@ -6,7 +6,7 @@ import theme from "../theme";
 import ProfileImage from '../assets/ProfileImage.png';
 
 let Contents1 = styled.div`
-  padding-top: 10px;
+  padding-top: 100px;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -59,7 +59,7 @@ const Profile =()=>{
                 <HorizonLine color={"#FFFFFF"}/><IoPersonSharp size={20} color={"#FFFFFF"}/><HorizonLine color={"#FFFFFF"}/>
             </LineIcon>
             <H4>Front-End Developer</H4>
-            <Who>프론트앤드 개발자 김지상 입니다.<br/>열심히 살고 있습니다.<br/>저희집 강아지는 귀엽습니다.(중요)</Who>
+            <Who>프론트앤드 개발자<br/>주사용언어: React, React-Native<br/>MBTI: ENTP<br/>강아지 키움..(귀엽다)😘<br/>👍</Who>
             <EmtpyBox/>
         </Contents1>
     );

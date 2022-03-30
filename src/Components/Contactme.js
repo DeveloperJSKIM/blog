@@ -44,7 +44,7 @@ let BoxContainer =styled.div`
   cursor: ${props => props.onMouse? "pointer": "auto"};;
 `;
 
-const Contactme =()=>{
+const Contactme =(props)=>{
     const [onMouse,setOnMouse]=useState(false);
     return(
         <Contents3>
@@ -62,10 +62,10 @@ const Contactme =()=>{
                     setOnMouse(false);
                 }}
                 onClick={()=>{
-                    alert("아직미구현입니다 하하")
+                    alert("미구현 입니다")
                 }}
             >
-                <FiMail/> Send Mail
+                <FiMail size={20}/> SendMail
             </BoxContainer>
 
         </Contents3>
