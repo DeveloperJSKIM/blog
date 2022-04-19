@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/blog/static/css/main.04179b6f.css",
-    "main.js": "/blog/static/js/main.ba9c3b59.js",
+    "main.js": "/blog/static/js/main.1977cad5.js",
     "static/js/787.f587e8d5.chunk.js": "/blog/static/js/787.f587e8d5.chunk.js",
     "static/media/OceanTraffic.png": "/blog/static/media/OceanTraffic.52c880d2dc28d97cf5bb.png",
     "static/media/PS2.png": "/blog/static/media/PS2.9cc6ee7484115a30e6ad.png",
@@ -16,11 +16,11 @@
     "static/media/웹페이지4.png": "/blog/static/media/웹페이지4.f149f2bfea4e4241d2fb.png",
     "index.html": "/blog/index.html",
     "main.04179b6f.css.map": "/blog/static/css/main.04179b6f.css.map",
-    "main.ba9c3b59.js.map": "/blog/static/js/main.ba9c3b59.js.map",
+    "main.1977cad5.js.map": "/blog/static/js/main.1977cad5.js.map",
     "787.f587e8d5.chunk.js.map": "/blog/static/js/787.f587e8d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04179b6f.css",
-    "static/js/main.ba9c3b59.js"
+    "static/js/main.1977cad5.js"
   ]
 }
