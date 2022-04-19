@@ -56,13 +56,17 @@ let PSView = styled.img`
 let PortpolioContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  @media(max-width: 400px){
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 let ImgBox = styled.div`
   display: flex;
   margin-right: 10px;
   margin-left: 10px;
   flex-direction: column;
-  
+  align-items: center;
 `;
 
 
@@ -95,7 +99,7 @@ const Portfolio =()=>{
                     <PSView src={OceanTraffic}/>
                     <h4>OceanTrafficWeb</h4>
                 </ImgBox>
-                <ImgBox onClick={()=>onDetail([PetHospital],"PetHospital","제주도 내 주변 동물병원 찾기 웹사이트 입니다. \n현재 개발중이며 공공 API를 이용 했습니다.")}>
+                <ImgBox onClick={()=>onDetail([PetHospital],"PetHospital","제주도 내 주변 동물병원 찾기 웹사이트 입니다. \n 공공 API를 이용 했습니다. \n https://jeju-pet-hospital.web.app /")}>
                     <PSView src={PetHospital}/>
                     <h4>Jeju-PetHospital</h4>
                 </ImgBox>

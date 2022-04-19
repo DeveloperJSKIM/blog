@@ -13,6 +13,7 @@ let MainContainer =styled.div`
     display: block;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 `;
 let FixedNav = styled.div`
   position: fixed;

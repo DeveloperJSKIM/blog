@@ -18,12 +18,18 @@ let MainText = styled.h3`
   color: white;
   font-weight: bold;
   margin-bottom: 20px;
+  @media(max-width: 450px){
+    font-size: 15px;
+  }
   
 `;
 let SubText = styled.h4`
   color: white;
   font-weight: 500;
   font-size: 20px;
+  @media(max-width: 450px){
+    font-size: 12px;
+  }
 `;
 let RoundView = styled.div`
   display: flex;
@@ -35,6 +41,10 @@ let RoundView = styled.div`
   align-items: center;
   background-color: ${props => props.onMouse? "#FFFFFF":"#000000"};
   cursor: ${props => props.onMouse? "pointer": "auto"};;
+  @media(max-width: 450px){
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 
