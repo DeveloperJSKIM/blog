@@ -40,7 +40,7 @@ function App() {
                         <Nav style={{color:"white", cursor:"pointer",marginRight:"20px"}}><Link to={"1"}>HOME</Link></Nav>
                         <Nav style={{color:"white", cursor:"pointer",marginRight:"20px"}}><Link to={"2"}>PORTFOLIO</Link></Nav>
                         <Nav style={{color:"white", cursor:"pointer",marginRight:"20px"}}><Link to={"3"}> CONTACT ME</Link></Nav>
-                        <Nav style={{color:"white", cursor:"pointer",marginRight:"20px"}}><Link to={"4"}> BOARD </Link></Nav>
+                        {/*<Nav style={{color:"white", cursor:"pointer",marginRight:"20px"}}><Link to={"4"}> BOARD </Link></Nav>*/}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
@@ -61,9 +61,9 @@ function App() {
         <Contactme/>
         </div>
 
-        <div id={"4"}>
-        <Board/>
-        </div>
+        {/*<div id={"4"}>*/}
+        {/*<Board/>*/}
+        {/*</div>*/}
 
         <Bottom/>
 

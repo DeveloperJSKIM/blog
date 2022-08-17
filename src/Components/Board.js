@@ -1,4 +1,4 @@
-import {db} from '../index.js'
+// import {db} from '../index.js'
 import "firebase/firestore";
 import React, {useEffect, useState} from "react";
 import styled from "styled-components";
@@ -61,36 +61,36 @@ const Board =()=>{
     let arr = [];
     let [passwordView,setPasswordView]=useState(false);
     let [deleteId,setDeleteId]=useState();
-    useEffect(()=>{
-        db.collection("board").get().then((result)=>{
+    // useEffect(()=>{
+    //     db.collection("board").get().then((result)=>{
+    //
+    //         result.forEach((doc)=>{
+    //             console.log(doc.data());
+    //             arr.push(doc.data());
+    //         })
+    //     }).then(()=>{
+    //         setData([]);
+    //         setData([...data,arr]);
+    //     });
+    // },[]);
 
-            result.forEach((doc)=>{
-                console.log(doc.data());
-                arr.push(doc.data());
-            })
-        }).then(()=>{
-            setData([]);
-            setData([...data,arr]);
-        });
-    },[]);
-
-    const upLoad =(title,context)=>{
-        let date = new Date();
-        let newId = date.getTime().toString();
-        db.collection("board").doc(newId).set({id:newId,title: title,context:context}).then(
-            ()=>{
-                window.location.reload();
-            }
-        );
-    }
-    const Delete =()=>{
-        db.collection("board").doc(deleteId).delete().then(()=>{
-            console.log("Delete Success!");
-            window.location.reload();
-        }).catch((err)=>{
-            console.log(err);
-        })
-    }
+    // const upLoad =(title,context)=>{
+    //     let date = new Date();
+    //     let newId = date.getTime().toString();
+    //     db.collection("board").doc(newId).set({id:newId,title: title,context:context}).then(
+    //         ()=>{
+    //             window.location.reload();
+    //         }
+    //     );
+    // }
+    // const Delete =()=>{
+    //     db.collection("board").doc(deleteId).delete().then(()=>{
+    //         console.log("Delete Success!");
+    //         window.location.reload();
+    //     }).catch((err)=>{
+    //         console.log(err);
+    //     })
+    // }
 
 
 
@@ -129,41 +129,41 @@ const Board =()=>{
                 <Input inputsize={"300px"} placeholder={"내용"} value={inputContext} onChange={(e)=>setInputContext(e.target.value)}/>
                 <Button
                     style={{backgroundColor:"black",border:0}}
-                    onClick={()=>{
-                        upLoad(inputTitle,inputContext);
-                    }}
+                    // onClick={()=>{
+                    //     upLoad(inputTitle,inputContext);
+                    // }}
                 >UpLoad
                 </Button>
             </InputContainer>
-            {passwordView?<PasswordInput
-                setPasswordView={setPasswordView}
-                delete={Delete}
-            />:null}
+            {/*{passwordView?<PasswordInput*/}
+            {/*    setPasswordView={setPasswordView}*/}
+            {/*    // delete={Delete}*/}
+            {/*/>:null}*/}
         </MainContainer>
     );
 };
-const PasswordInput = (props)=>{
-    let [pw,setPw]=useState();
-    return(
-        <PasswordView>
-            <InnerPasswordView>
-                <h4 style={{color:"#FFFFFF"}}>Password</h4>
-                <Input value={pw} onChange={(e)=>{setPw(e.target.value)}} placeholder={"삭제비밀번호입력"} type={"password"}/>
-                <Button
-                    onClick={()=>{
-                    if(pw==="qwe123"){
-                        props.delete();
-                    }else{
-                        alert("비번그거아닌데")
-                        props.setPasswordView(false);
-                    }
-                }}
-                    style={{backgroundColor:theme.NativeColor,border:0,height:30,paddingBottom:30}}
-                >확인</Button>
-            </InnerPasswordView>
-        </PasswordView>
-    );
-}
+// const PasswordInput = (props)=>{
+//     let [pw,setPw]=useState();
+//     return(
+//         <PasswordView>
+//             <InnerPasswordView>
+//                 <h4 style={{color:"#FFFFFF"}}>Password</h4>
+//                 <Input value={pw} onChange={(e)=>{setPw(e.target.value)}} placeholder={"삭제비밀번호입력"} type={"password"}/>
+//                 <Button
+//                     onClick={()=>{
+//                     if(pw==="qwe123"){
+//                         props.delete();
+//                     }else{
+//                         alert("비번그거아닌데")
+//                         props.setPasswordView(false);
+//                     }
+//                 }}
+//                     style={{backgroundColor:theme.NativeColor,border:0,height:30,paddingBottom:30}}
+//                 >확인</Button>
+//             </InnerPasswordView>
+//         </PasswordView>
+//     );
+// }
 
 const BoardContext =(props)=>{
     return(
